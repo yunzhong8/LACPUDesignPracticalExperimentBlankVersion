@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="9320001fs"></ZoomEndTime>
+      <Cursor1Time time="5615000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="368"></NameColumnWidth>
+      <ValueColumnWidth column_width="105"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject type="logic" fp_name="/tb_top/resetn">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/w_ok_r">
+      <obj_property name="ElementShortName">w_ok_r</obj_property>
+      <obj_property name="ObjectShortName">w_ok_r</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/r_ok_r">
+      <obj_property name="ElementShortName">r_ok_r</obj_property>
+      <obj_property name="ObjectShortName">r_ok_r</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/s_ok_r">
+      <obj_property name="ElementShortName">s_ok_r</obj_property>
+      <obj_property name="ObjectShortName">s_ok_r</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group17">
+      <obj_property name="label">S0_input</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s0_vppn">
+         <obj_property name="ElementShortName">s0_vppn[18:0]</obj_property>
+         <obj_property name="ObjectShortName">s0_vppn[18:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/s0_va_bit12">
+         <obj_property name="ElementShortName">s0_va_bit12</obj_property>
+         <obj_property name="ObjectShortName">s0_va_bit12</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s0_asid">
+         <obj_property name="ElementShortName">s0_asid[9:0]</obj_property>
+         <obj_property name="ObjectShortName">s0_asid[9:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group37">
+      <obj_property name="label">s0_output</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/s0_found">
+         <obj_property name="ElementShortName">s0_found</obj_property>
+         <obj_property name="ObjectShortName">s0_found</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s0_obus">
+         <obj_property name="ElementShortName">s0_obus[35:0]</obj_property>
+         <obj_property name="ObjectShortName">s0_obus[35:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s0_index">
+         <obj_property name="ElementShortName">s0_index[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s0_index[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s0_ppn">
+         <obj_property name="ElementShortName">s0_ppn[19:0]</obj_property>
+         <obj_property name="ObjectShortName">s0_ppn[19:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s0_ps">
+         <obj_property name="ElementShortName">s0_ps[5:0]</obj_property>
+         <obj_property name="ObjectShortName">s0_ps[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s0_plv">
+         <obj_property name="ElementShortName">s0_plv[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s0_plv[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s0_mat">
+         <obj_property name="ElementShortName">s0_mat[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s0_mat[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/s0_d">
+         <obj_property name="ElementShortName">s0_d</obj_property>
+         <obj_property name="ObjectShortName">s0_d</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/s0_v">
+         <obj_property name="ElementShortName">s0_v</obj_property>
+         <obj_property name="ObjectShortName">s0_v</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group49">
+      <obj_property name="label">S1_input</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s1_vppn">
+         <obj_property name="ElementShortName">s1_vppn[18:0]</obj_property>
+         <obj_property name="ObjectShortName">s1_vppn[18:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/s1_va_bit12">
+         <obj_property name="ElementShortName">s1_va_bit12</obj_property>
+         <obj_property name="ObjectShortName">s1_va_bit12</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s1_asid">
+         <obj_property name="ElementShortName">s1_asid[9:0]</obj_property>
+         <obj_property name="ObjectShortName">s1_asid[9:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group50">
+      <obj_property name="label">S1_output</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/s1_found">
+         <obj_property name="ElementShortName">s1_found</obj_property>
+         <obj_property name="ObjectShortName">s1_found</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s1_index">
+         <obj_property name="ElementShortName">s1_index[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s1_index[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s1_ppn">
+         <obj_property name="ElementShortName">s1_ppn[19:0]</obj_property>
+         <obj_property name="ObjectShortName">s1_ppn[19:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s1_ps">
+         <obj_property name="ElementShortName">s1_ps[5:0]</obj_property>
+         <obj_property name="ObjectShortName">s1_ps[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s1_plv">
+         <obj_property name="ElementShortName">s1_plv[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s1_plv[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/s1_mat">
+         <obj_property name="ElementShortName">s1_mat[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s1_mat[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/s1_d">
+         <obj_property name="ElementShortName">s1_d</obj_property>
+         <obj_property name="ObjectShortName">s1_d</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/s1_v">
+         <obj_property name="ElementShortName">s1_v</obj_property>
+         <obj_property name="ObjectShortName">s1_v</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group68">
+      <obj_property name="label">W</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/we">
+         <obj_property name="ElementShortName">we</obj_property>
+         <obj_property name="ObjectShortName">we</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/w_index">
+         <obj_property name="ElementShortName">w_index[3:0]</obj_property>
+         <obj_property name="ObjectShortName">w_index[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/w_e">
+         <obj_property name="ElementShortName">w_e</obj_property>
+         <obj_property name="ObjectShortName">w_e</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/w_vppn">
+         <obj_property name="ElementShortName">w_vppn[18:0]</obj_property>
+         <obj_property name="ObjectShortName">w_vppn[18:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/w_ps">
+         <obj_property name="ElementShortName">w_ps[5:0]</obj_property>
+         <obj_property name="ObjectShortName">w_ps[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/w_asid">
+         <obj_property name="ElementShortName">w_asid[9:0]</obj_property>
+         <obj_property name="ObjectShortName">w_asid[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/w_g">
+         <obj_property name="ElementShortName">w_g</obj_property>
+         <obj_property name="ObjectShortName">w_g</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/w_ppn0">
+         <obj_property name="ElementShortName">w_ppn0[19:0]</obj_property>
+         <obj_property name="ObjectShortName">w_ppn0[19:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/w_plv0">
+         <obj_property name="ElementShortName">w_plv0[1:0]</obj_property>
+         <obj_property name="ObjectShortName">w_plv0[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/w_mat0">
+         <obj_property name="ElementShortName">w_mat0[1:0]</obj_property>
+         <obj_property name="ObjectShortName">w_mat0[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/w_d0">
+         <obj_property name="ElementShortName">w_d0</obj_property>
+         <obj_property name="ObjectShortName">w_d0</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/w_v0">
+         <obj_property name="ElementShortName">w_v0</obj_property>
+         <obj_property name="ObjectShortName">w_v0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/w_ppn1">
+         <obj_property name="ElementShortName">w_ppn1[19:0]</obj_property>
+         <obj_property name="ObjectShortName">w_ppn1[19:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/w_plv1">
+         <obj_property name="ElementShortName">w_plv1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">w_plv1[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/w_mat1">
+         <obj_property name="ElementShortName">w_mat1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">w_mat1[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/w_d1">
+         <obj_property name="ElementShortName">w_d1</obj_property>
+         <obj_property name="ObjectShortName">w_d1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/w_v1">
+         <obj_property name="ElementShortName">w_v1</obj_property>
+         <obj_property name="ObjectShortName">w_v1</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group506">
+      <obj_property name="label">error</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb_w_test_ok">
+         <obj_property name="ElementShortName">tlb_w_test_ok</obj_property>
+         <obj_property name="ObjectShortName">tlb_w_test_ok</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/test_error">
+         <obj_property name="ElementShortName">test_error</obj_property>
+         <obj_property name="ObjectShortName">test_error</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/r_error">
+         <obj_property name="ElementShortName">r_error</obj_property>
+         <obj_property name="ObjectShortName">r_error</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/s0_error">
+         <obj_property name="ElementShortName">s0_error</obj_property>
+         <obj_property name="ObjectShortName">s0_error</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/s1_error">
+         <obj_property name="ElementShortName">s1_error</obj_property>
+         <obj_property name="ObjectShortName">s1_error</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group511">
+      <obj_property name="label">CNT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/tlb_w_cnt">
+         <obj_property name="ElementShortName">tlb_w_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">tlb_w_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/tlb_s_cnt">
+         <obj_property name="ElementShortName">tlb_s_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">tlb_s_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/tlb_r_cnt">
+         <obj_property name="ElementShortName">tlb_r_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">tlb_r_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/wait_cnt">
+         <obj_property name="ElementShortName">wait_cnt[26:0]</obj_property>
+         <obj_property name="ObjectShortName">wait_cnt[26:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group85">
+      <obj_property name="label">R</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/r_index">
+         <obj_property name="ElementShortName">r_index[3:0]</obj_property>
+         <obj_property name="ObjectShortName">r_index[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/r_e">
+         <obj_property name="ElementShortName">r_e</obj_property>
+         <obj_property name="ObjectShortName">r_e</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/r_vppn">
+         <obj_property name="ElementShortName">r_vppn[18:0]</obj_property>
+         <obj_property name="ObjectShortName">r_vppn[18:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/r_ps">
+         <obj_property name="ElementShortName">r_ps[5:0]</obj_property>
+         <obj_property name="ObjectShortName">r_ps[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/r_asid">
+         <obj_property name="ElementShortName">r_asid[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_asid[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/r_g">
+         <obj_property name="ElementShortName">r_g</obj_property>
+         <obj_property name="ObjectShortName">r_g</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/r_ppn0">
+         <obj_property name="ElementShortName">r_ppn0[19:0]</obj_property>
+         <obj_property name="ObjectShortName">r_ppn0[19:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/r_plv0">
+         <obj_property name="ElementShortName">r_plv0[1:0]</obj_property>
+         <obj_property name="ObjectShortName">r_plv0[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/r_mat0">
+         <obj_property name="ElementShortName">r_mat0[1:0]</obj_property>
+         <obj_property name="ObjectShortName">r_mat0[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/r_d0">
+         <obj_property name="ElementShortName">r_d0</obj_property>
+         <obj_property name="ObjectShortName">r_d0</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/r_v0">
+         <obj_property name="ElementShortName">r_v0</obj_property>
+         <obj_property name="ObjectShortName">r_v0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/r_ppn1">
+         <obj_property name="ElementShortName">r_ppn1[19:0]</obj_property>
+         <obj_property name="ObjectShortName">r_ppn1[19:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/r_plv1">
+         <obj_property name="ElementShortName">r_plv1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">r_plv1[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/r_mat1">
+         <obj_property name="ElementShortName">r_mat1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">r_mat1[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/r_d1">
+         <obj_property name="ElementShortName">r_d1</obj_property>
+         <obj_property name="ObjectShortName">r_d1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/r_v1">
+         <obj_property name="ElementShortName">r_v1</obj_property>
+         <obj_property name="ObjectShortName">r_v1</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/w_vppn_i">
+      <obj_property name="ElementShortName">w_vppn_i[18:0]</obj_property>
+      <obj_property name="ObjectShortName">w_vppn_i[18:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/w_index_i">
+      <obj_property name="ElementShortName">w_index_i[2:0]</obj_property>
+      <obj_property name="ObjectShortName">w_index_i[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group297">
+      <obj_property name="label">Grouo0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="group" fp_name="group512">
+         <obj_property name="label">read</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/r_obus">
+            <obj_property name="ElementShortName">r_obus[88:0]</obj_property>
+            <obj_property name="ObjectShortName">r_obus[88:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group780">
+         <obj_property name="label">S0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_found_o">
+            <obj_property name="ElementShortName">s0_found_o</obj_property>
+            <obj_property name="ObjectShortName">s0_found_o</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="group802">
+            <obj_property name="label">match</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_match0">
+               <obj_property name="ElementShortName">s0_match0</obj_property>
+               <obj_property name="ObjectShortName">s0_match0</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_match1">
+               <obj_property name="ElementShortName">s0_match1</obj_property>
+               <obj_property name="ObjectShortName">s0_match1</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_match2">
+               <obj_property name="ElementShortName">s0_match2</obj_property>
+               <obj_property name="ObjectShortName">s0_match2</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_match3">
+               <obj_property name="ElementShortName">s0_match3</obj_property>
+               <obj_property name="ObjectShortName">s0_match3</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_match4">
+               <obj_property name="ElementShortName">s0_match4</obj_property>
+               <obj_property name="ObjectShortName">s0_match4</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_match5">
+               <obj_property name="ElementShortName">s0_match5</obj_property>
+               <obj_property name="ObjectShortName">s0_match5</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_match6">
+               <obj_property name="ElementShortName">s0_match6</obj_property>
+               <obj_property name="ObjectShortName">s0_match6</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_match7">
+               <obj_property name="ElementShortName">s0_match7</obj_property>
+               <obj_property name="ObjectShortName">s0_match7</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group830">
+            <obj_property name="label">input</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_vppn_i">
+               <obj_property name="ElementShortName">s0_vppn_i[18:0]</obj_property>
+               <obj_property name="ObjectShortName">s0_vppn_i[18:0]</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_va_bit12_i">
+               <obj_property name="ElementShortName">s0_va_bit12_i</obj_property>
+               <obj_property name="ObjectShortName">s0_va_bit12_i</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_asid_i">
+               <obj_property name="ElementShortName">s0_asid_i[9:0]</obj_property>
+               <obj_property name="ObjectShortName">s0_asid_i[9:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group831">
+            <obj_property name="label">output</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_index_o">
+               <obj_property name="ElementShortName">s0_index_o[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s0_index_o[3:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_ppn_o">
+               <obj_property name="ElementShortName">s0_ppn_o[19:0]</obj_property>
+               <obj_property name="ObjectShortName">s0_ppn_o[19:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_ps_o">
+               <obj_property name="ElementShortName">s0_ps_o[5:0]</obj_property>
+               <obj_property name="ObjectShortName">s0_ps_o[5:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_plv_o">
+               <obj_property name="ElementShortName">s0_plv_o[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s0_plv_o[1:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_mat_o">
+               <obj_property name="ElementShortName">s0_mat_o[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s0_mat_o[1:0]</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_d_o">
+               <obj_property name="ElementShortName">s0_d_o</obj_property>
+               <obj_property name="ObjectShortName">s0_d_o</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s0_v_o">
+               <obj_property name="ElementShortName">s0_v_o</obj_property>
+               <obj_property name="ObjectShortName">s0_v_o</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group778">
+         <obj_property name="label">S1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_found_o">
+            <obj_property name="ElementShortName">s1_found_o</obj_property>
+            <obj_property name="ObjectShortName">s1_found_o</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="group811">
+            <obj_property name="label">match</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_match0">
+               <obj_property name="ElementShortName">s1_match0</obj_property>
+               <obj_property name="ObjectShortName">s1_match0</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_match1">
+               <obj_property name="ElementShortName">s1_match1</obj_property>
+               <obj_property name="ObjectShortName">s1_match1</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_match2">
+               <obj_property name="ElementShortName">s1_match2</obj_property>
+               <obj_property name="ObjectShortName">s1_match2</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_match3">
+               <obj_property name="ElementShortName">s1_match3</obj_property>
+               <obj_property name="ObjectShortName">s1_match3</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_match4">
+               <obj_property name="ElementShortName">s1_match4</obj_property>
+               <obj_property name="ObjectShortName">s1_match4</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_match5">
+               <obj_property name="ElementShortName">s1_match5</obj_property>
+               <obj_property name="ObjectShortName">s1_match5</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_match6">
+               <obj_property name="ElementShortName">s1_match6</obj_property>
+               <obj_property name="ObjectShortName">s1_match6</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_match7">
+               <obj_property name="ElementShortName">s1_match7</obj_property>
+               <obj_property name="ObjectShortName">s1_match7</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group832">
+            <obj_property name="label">input</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_vppn_i">
+               <obj_property name="ElementShortName">s1_vppn_i[18:0]</obj_property>
+               <obj_property name="ObjectShortName">s1_vppn_i[18:0]</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_va_bit12_i">
+               <obj_property name="ElementShortName">s1_va_bit12_i</obj_property>
+               <obj_property name="ObjectShortName">s1_va_bit12_i</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_asid_i">
+               <obj_property name="ElementShortName">s1_asid_i[9:0]</obj_property>
+               <obj_property name="ObjectShortName">s1_asid_i[9:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group833">
+            <obj_property name="label">output</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_index_o">
+               <obj_property name="ElementShortName">s1_index_o[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s1_index_o[3:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_ppn_o">
+               <obj_property name="ElementShortName">s1_ppn_o[19:0]</obj_property>
+               <obj_property name="ObjectShortName">s1_ppn_o[19:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_ps_o">
+               <obj_property name="ElementShortName">s1_ps_o[5:0]</obj_property>
+               <obj_property name="ObjectShortName">s1_ps_o[5:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_plv_o">
+               <obj_property name="ElementShortName">s1_plv_o[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s1_plv_o[1:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_mat_o">
+               <obj_property name="ElementShortName">s1_mat_o[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s1_mat_o[1:0]</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_d_o">
+               <obj_property name="ElementShortName">s1_d_o</obj_property>
+               <obj_property name="ObjectShortName">s1_d_o</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/s1_v_o">
+               <obj_property name="ElementShortName">s1_v_o</obj_property>
+               <obj_property name="ObjectShortName">s1_v_o</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group105">
+         <obj_property name="label">Group0_Regs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/we_i">
+            <obj_property name="ElementShortName">we_i</obj_property>
+            <obj_property name="ObjectShortName">we_i</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/r_ibus">
+            <obj_property name="ElementShortName">r_ibus[3:0]</obj_property>
+            <obj_property name="ObjectShortName">r_ibus[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/w_index_i">
+            <obj_property name="ElementShortName">w_index_i[2:0]</obj_property>
+            <obj_property name="ObjectShortName">w_index_i[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/w_vppn_i">
+            <obj_property name="ElementShortName">w_vppn_i[18:0]</obj_property>
+            <obj_property name="ObjectShortName">w_vppn_i[18:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbVppnRegs">
+            <obj_property name="ElementShortName">TlbVppnRegs[0:7][18:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbVppnRegs[0:7][18:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbPsRegs">
+            <obj_property name="ElementShortName">TlbPsRegs[0:7][5:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbPsRegs[0:7][5:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbGRegs">
+            <obj_property name="ElementShortName">TlbGRegs[0:7][0:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbGRegs[0:7][0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbAsidRegs">
+            <obj_property name="ElementShortName">TlbAsidRegs[0:7][9:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbAsidRegs[0:7][9:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbERegs">
+            <obj_property name="ElementShortName">TlbERegs[0:7]</obj_property>
+            <obj_property name="ObjectShortName">TlbERegs[0:7]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbPpn0Regs">
+            <obj_property name="ElementShortName">TlbPpn0Regs[0:7][19:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbPpn0Regs[0:7][19:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbPlv0Regs">
+            <obj_property name="ElementShortName">TlbPlv0Regs[0:7][1:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbPlv0Regs[0:7][1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbMat0Regs">
+            <obj_property name="ElementShortName">TlbMat0Regs[0:7][1:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbMat0Regs[0:7][1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbD0Regs">
+            <obj_property name="ElementShortName">TlbD0Regs[0:7][0:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbD0Regs[0:7][0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbV0Regs">
+            <obj_property name="ElementShortName">TlbV0Regs[0:7][0:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbV0Regs[0:7][0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbPpn1Regs">
+            <obj_property name="ElementShortName">TlbPpn1Regs[0:7][19:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbPpn1Regs[0:7][19:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbPlv1Regs">
+            <obj_property name="ElementShortName">TlbPlv1Regs[0:7][1:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbPlv1Regs[0:7][1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbMat1Regs">
+            <obj_property name="ElementShortName">TlbMat1Regs[0:7][1:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbMat1Regs[0:7][1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbD1Regs">
+            <obj_property name="ElementShortName">TlbD1Regs[0:7][0:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbD1Regs[0:7][0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item0/TlbV1Regs">
+            <obj_property name="ElementShortName">TlbV1Regs[0:7][0:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbV1Regs[0:7][0:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group121">
+      <obj_property name="label">Group1_Regs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/we_i">
+         <obj_property name="ElementShortName">we_i</obj_property>
+         <obj_property name="ObjectShortName">we_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/r_obus">
+         <obj_property name="ElementShortName">r_obus[88:0]</obj_property>
+         <obj_property name="ObjectShortName">r_obus[88:0]</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group1011">
+         <obj_property name="label">Regs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group1010">
+            <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbVppnRegs">
+               <obj_property name="ElementShortName">TlbVppnRegs[0:7][18:0]</obj_property>
+               <obj_property name="ObjectShortName">TlbVppnRegs[0:7][18:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbPsRegs">
+            <obj_property name="ElementShortName">TlbPsRegs[0:7][5:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbPsRegs[0:7][5:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbGRegs">
+            <obj_property name="ElementShortName">TlbGRegs[0:7][0:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbGRegs[0:7][0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbAsidRegs">
+            <obj_property name="ElementShortName">TlbAsidRegs[0:7][9:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbAsidRegs[0:7][9:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbERegs">
+            <obj_property name="ElementShortName">TlbERegs[0:7]</obj_property>
+            <obj_property name="ObjectShortName">TlbERegs[0:7]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbPpn0Regs">
+            <obj_property name="ElementShortName">TlbPpn0Regs[0:7][19:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbPpn0Regs[0:7][19:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbPlv0Regs">
+            <obj_property name="ElementShortName">TlbPlv0Regs[0:7][1:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbPlv0Regs[0:7][1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbMat0Regs">
+            <obj_property name="ElementShortName">TlbMat0Regs[0:7][1:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbMat0Regs[0:7][1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbD0Regs">
+            <obj_property name="ElementShortName">TlbD0Regs[0:7][0:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbD0Regs[0:7][0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbV0Regs">
+            <obj_property name="ElementShortName">TlbV0Regs[0:7][0:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbV0Regs[0:7][0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbPpn1Regs">
+            <obj_property name="ElementShortName">TlbPpn1Regs[0:7][19:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbPpn1Regs[0:7][19:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbPlv1Regs">
+            <obj_property name="ElementShortName">TlbPlv1Regs[0:7][1:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbPlv1Regs[0:7][1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbMat1Regs">
+            <obj_property name="ElementShortName">TlbMat1Regs[0:7][1:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbMat1Regs[0:7][1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbD1Regs">
+            <obj_property name="ElementShortName">TlbD1Regs[0:7][0:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbD1Regs[0:7][0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/TlbGroup_item1/TlbV1Regs">
+            <obj_property name="ElementShortName">TlbV1Regs[0:7][0:0]</obj_property>
+            <obj_property name="ObjectShortName">TlbV1Regs[0:7][0:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group137">
+      <obj_property name="label">Group2_Regs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group153">
+      <obj_property name="label">Group3_Regs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/s1_obus">
+      <obj_property name="ElementShortName">s1_obus[35:0]</obj_property>
+      <obj_property name="ObjectShortName">s1_obus[35:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/tlb_top/tlb/s0_obus">
+      <obj_property name="ElementShortName">s0_obus[35:0]</obj_property>
+      <obj_property name="ObjectShortName">s0_obus[35:0]</obj_property>
+   </wvobject>
+</wave_config>

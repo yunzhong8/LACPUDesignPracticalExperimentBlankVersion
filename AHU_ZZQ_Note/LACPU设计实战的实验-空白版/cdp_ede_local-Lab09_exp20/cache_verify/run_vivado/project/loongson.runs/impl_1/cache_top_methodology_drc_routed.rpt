@@ -1,0 +1,121 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Sun May 28 16:15:09 2023
+| Host         : nb running 64-bit Ubuntu 22.04.2 LTS
+| Command      : report_methodology -file cache_top_methodology_drc_routed.rpt -pb cache_top_methodology_drc_routed.pb -rpx cache_top_methodology_drc_routed.rpx
+| Design       : cache_top
+| Device       : xc7a200tfbg676-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 17
++-----------+----------+-----------------------------------------------------------+------------+
+| Rule      | Severity | Description                                               | Violations |
++-----------+----------+-----------------------------------------------------------+------------+
+| SYNTH-5   | Warning  | Mapped onto distributed RAM because of timing constraints | 4          |
+| TIMING-20 | Warning  | Non-clocked latch                                         | 13         |
++-----------+----------+-----------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-5#1 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance cache/cache_table_item/cache_way_item0/d_reg_reg_0_127_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#2 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance cache/cache_table_item/cache_way_item0/d_reg_reg_128_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#3 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance cache/cache_table_item/cache_way_item1/d_reg_reg_0_127_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#4 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance cache/cache_table_item/cache_way_item1/d_reg_reg_128_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch cache/FSM_sequential_r_ns_reg[0] cannot be properly analyzed as its control pin cache/FSM_sequential_r_ns_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch cache/FSM_sequential_r_ns_reg[1] cannot be properly analyzed as its control pin cache/FSM_sequential_r_ns_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch cache/FSM_sequential_r_ns_reg[2] cannot be properly analyzed as its control pin cache/FSM_sequential_r_ns_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch cache/cache_en_reg cannot be properly analyzed as its control pin cache/cache_en_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch cache/cache_wdata_buffer_we_reg cannot be properly analyzed as its control pin cache/cache_wdata_buffer_we_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch cache/cache_wtype_reg[0] cannot be properly analyzed as its control pin cache/cache_wtype_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch cache/cache_wtype_reg[1] cannot be properly analyzed as its control pin cache/cache_wtype_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch cache/data_ok_reg cannot be properly analyzed as its control pin cache/data_ok_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch cache/miss_replace_way_we_reg cannot be properly analyzed as its control pin cache/miss_replace_way_we_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch cache/rd_req_reg cannot be properly analyzed as its control pin cache/rd_req_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch cache/search_addr_buffer_we_reg cannot be properly analyzed as its control pin cache/search_addr_buffer_we_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch cache/search_buffer_we_reg cannot be properly analyzed as its control pin cache/search_buffer_we_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch cache/wr_req_reg cannot be properly analyzed as its control pin cache/wr_req_reg/G is not reached by a timing clock
+Related violations: <none>
+
+

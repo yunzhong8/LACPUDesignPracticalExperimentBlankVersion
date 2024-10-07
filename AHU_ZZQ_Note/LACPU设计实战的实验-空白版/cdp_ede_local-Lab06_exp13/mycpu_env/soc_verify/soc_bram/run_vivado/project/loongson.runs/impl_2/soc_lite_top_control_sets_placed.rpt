@@ -1,0 +1,223 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Fri May  5 15:04:48 2023
+| Host         : nb running 64-bit Ubuntu 22.04.2 LTS
+| Command      : report_control_sets -verbose -file soc_lite_top_control_sets_placed.rpt
+| Design       : soc_lite_top
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   145 |
+|    Minimum number of control sets                        |   145 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   195 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   145 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     6 |
+| >= 14 to < 16      |     6 |
+| >= 16              |   118 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             192 |           75 |
+| No           | No                    | Yes                    |              32 |            9 |
+| No           | Yes                   | No                     |             151 |           45 |
+| Yes          | No                    | No                     |            2618 |          846 |
+| Yes          | No                    | Yes                    |              12 |            3 |
+| Yes          | Yes                   | No                     |            3376 |         1711 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+-----------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|       Clock Signal      |                    Enable Signal                    |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++-------------------------+-----------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[100]_16          | cpu/WbStageI/MEMWBI/to_wb_obus_reg[100]_15          |                1 |              1 |
+|  CDMS/T_1ms/CLK         |                                                     | cpu/RFI/CsrI/resetn                                 |                2 |              3 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_1            |                                                     |                1 |              4 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[202]_1           | cpu/RFI/CsrI/resetn                                 |                3 |              4 |
+|  clk_pll/inst/vga_clk   |                                                     |                                                     |                3 |              4 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[99]_25           | cpu/WbStageI/MEMWBI/resetn                          |                4 |              5 |
+|  clk_pll/inst/cpu_clk   | cpu/LanuchI/IFIDI/to_id_obus_reg[165]_0[0]          | cpu/RFI/CsrI/resetn                                 |                2 |              5 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep_9[0]     | cpu/RFI/CsrI/resetn                                 |                6 |              6 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[206]_0[0]         | cpu/ExStageI/Div_item/count[5]_i_1_n_0              |                2 |              6 |
+|  clk_pll/inst/cpu_clk   | cpu/RFI/CsrI/crmd_reg_reg[2]_0                      | cpu/RFI/CsrI/resetn                                 |                3 |              8 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/E[0]                             | cpu/RFI/CsrI/resetn                                 |                2 |              8 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep_10       | cpu/RFI/CsrI/resetn                                 |                7 |              8 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep_14       | cpu/RFI/CsrI/resetn                                 |                8 |              8 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep_12       |                                                     |                7 |             10 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep__1_18    |                                                     |                8 |             10 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[101]_1           | cpu/RFI/CsrI/resetn                                 |               12 |             12 |
+|  clk_pll/inst/vga_clk   | vga_colorbat_item/vga_driver_item/cnt_y0            | vga_colorbat_item/vga_driver_item/cnt_x[11]_i_2_n_0 |                3 |             12 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep_5[0]     |                                                     |                8 |             12 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep_10[0]    | cpu/RFI/CsrI/resetn                                 |               11 |             12 |
+|  clk_pll/inst/vga_clk   |                                                     | vga_colorbat_item/vga_driver_item/cnt_x[11]_i_2_n_0 |                3 |             12 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep_7[0]     |                                                     |                7 |             13 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[100]_13[0]       |                                                     |                8 |             14 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[99]_29           |                                                     |                9 |             14 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[99]_24[0]        | cpu/RFI/CsrI/resetn                                 |               13 |             15 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[100]_24          | cpu/RFI/CsrI/resetn                                 |               12 |             15 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep_12[0]    | cpu/RFI/CsrI/resetn                                 |               15 |             15 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[97]_rep_5        | cpu/RFI/CsrI/resetn                                 |               15 |             15 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[97]_rep_5        |                                                     |               13 |             17 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep_12[0]    |                                                     |               13 |             17 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[99]_24[0]        |                                                     |               11 |             17 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[100]_24          |                                                     |               13 |             17 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[100]_13[0]       | cpu/RFI/CsrI/resetn                                 |               13 |             18 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[99]_29           | cpu/RFI/CsrI/resetn                                 |               12 |             18 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep_7[0]     | cpu/RFI/CsrI/resetn                                 |               15 |             19 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[101]_1           |                                                     |               16 |             20 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep_10[0]    |                                                     |               17 |             20 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep_5[0]     | cpu/RFI/CsrI/resetn                                 |               15 |             20 |
+|  clk_pll/inst/cpu_clk   |                                                     | u_confreg/step0_count0                              |                5 |             20 |
+|  clk_pll/inst/cpu_clk   |                                                     | u_confreg/step1_count0                              |                5 |             20 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep_12       | cpu/RFI/CsrI/resetn                                 |               20 |             22 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep__1_18    | cpu/RFI/CsrI/resetn                                 |               20 |             22 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep_10       |                                                     |               22 |             24 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep_14       |                                                     |               19 |             24 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep_9[0]     |                                                     |               22 |             26 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[99]_25           |                                                     |               11 |             26 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[135]_0[0]        | cpu/RFI/CsrI/resetn                                 |               18 |             29 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[100]_16          |                                                     |               24 |             29 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/line2_now_valid_o_reg_12        | cpu/RFI/CsrI/resetn                                 |               20 |             29 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/line1_now_valid_o_reg_1         | cpu/RFI/CsrI/resetn                                 |               20 |             31 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_6[0]         | cpu/RFI/CsrI/resetn                                 |               11 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[138]_3[0]        | cpu/RFI/CsrI/resetn                                 |               16 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[367]_rep__2_13   | cpu/RFI/CsrI/resetn                                 |               21 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[141]_1[0]        | cpu/RFI/CsrI/resetn                                 |               13 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[138]_2[0]        | cpu/RFI/CsrI/resetn                                 |               18 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_9[0]         | cpu/RFI/CsrI/resetn                                 |               14 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[100]_23[0]       |                                                     |               20 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep_6        | cpu/RFI/CsrI/resetn                                 |               26 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_14[0]        | cpu/RFI/CsrI/resetn                                 |               10 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_15[0]        | cpu/RFI/CsrI/resetn                                 |               12 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/timer_en_reg_0[0]               |                                                     |               20 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep__1_19    | cpu/RFI/CsrI/resetn                                 |               25 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_7[0]         | cpu/RFI/CsrI/resetn                                 |               11 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/line1_now_valid_o_reg_2[0]      | cpu/RFI/CsrI/resetn                                 |               24 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep_11       | cpu/RFI/CsrI/resetn                                 |               29 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep_13       | cpu/RFI/CsrI/resetn                                 |               26 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/line2_now_valid_o_reg_9[0]      | cpu/RFI/CsrI/resetn                                 |               18 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_5[0]         | cpu/RFI/CsrI/resetn                                 |                7 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/line2_now_valid_o_reg_11[0]     | cpu/RFI/CsrI/resetn                                 |               18 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_4[0]         | cpu/RFI/CsrI/resetn                                 |               14 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[99]_27           | cpu/RFI/CsrI/resetn                                 |               25 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_17[0]        | cpu/RFI/CsrI/resetn                                 |               15 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_16[0]        | cpu/RFI/CsrI/resetn                                 |                7 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[99]_30           | cpu/RFI/CsrI/resetn                                 |               28 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/E[0]                            | cpu/RFI/CsrI/resetn                                 |               23 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/line1_now_valid_o_reg_0[0]      | cpu/RFI/CsrI/resetn                                 |               16 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[140]_0[0]        | cpu/RFI/CsrI/resetn                                 |               18 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[99]_26[0]        |                                                     |               24 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep__0_41[0] |                                                     |               23 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[98]_rep__0_40[0] |                                                     |               23 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/Div_item/process_remainder[31]_i_1_n_0 |                                                     |               28 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/resetn[0]                        |                                                     |               13 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_10[0]        | cpu/RFI/CsrI/resetn                                 |                8 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_11[0]        | cpu/RFI/CsrI/resetn                                 |               10 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_12[0]        | cpu/RFI/CsrI/resetn                                 |               10 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_13[0]        | cpu/RFI/CsrI/resetn                                 |               10 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[96]_rep_11[0]    |                                                     |               21 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[413]_0[0]        | cpu/RFI/CsrI/resetn                                 |               22 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[410]_1[0]        | cpu/RFI/CsrI/resetn                                 |               17 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[409]_0[0]        | cpu/RFI/CsrI/resetn                                 |               15 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[407]_0[0]        | cpu/RFI/CsrI/resetn                                 |               19 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[150]_5[0]        | cpu/RFI/CsrI/resetn                                 |               19 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[150]_4[0]        | cpu/RFI/CsrI/resetn                                 |               22 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[150]_3[0]        | cpu/RFI/CsrI/resetn                                 |               21 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[150]_2[0]        | cpu/RFI/CsrI/resetn                                 |               18 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[150]_1[0]        | cpu/RFI/CsrI/resetn                                 |               16 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[149]_3[0]        | cpu/RFI/CsrI/resetn                                 |               16 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[149]_2[0]        | cpu/RFI/CsrI/resetn                                 |               16 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[149]_1[0]        | cpu/RFI/CsrI/resetn                                 |               20 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[148]_0[0]        | cpu/RFI/CsrI/resetn                                 |               18 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[100]_17          | cpu/RFI/CsrI/resetn                                 |               27 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[143]_2[0]        | cpu/RFI/CsrI/resetn                                 |               14 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[141]_2[0]        | cpu/RFI/CsrI/resetn                                 |               21 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/WbStageI/MEMWBI/to_wb_obus_reg[101]_2           | cpu/RFI/CsrI/resetn                                 |               26 |             32 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_8[0]         | cpu/RFI/CsrI/resetn                                 |               15 |             48 |
+|  clk_pll/inst/timer_clk |                                                     | cpu/RFI/CsrI/resetn                                 |               12 |             49 |
+|  clk_pll/inst/cpu_clk   | cpu/LanuchI/IFIDI/E[0]                              | cpu/RFI/CsrI/resetn                                 |               24 |             63 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group1/AddrICache[2][31]_i_1__1_n_0     |                                                     |               13 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group2/AddrICache[1][31]_i_1__0_n_0     |                                                     |               12 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group3/AddrICache[1][31]_i_1_n_0        |                                                     |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group3/AddrICache[0][31]_i_1_n_0        |                                                     |               13 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group2/AddrICache[6][31]_i_1__0_n_0     |                                                     |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group2/AddrICache[5][31]_i_1__0_n_0     |                                                     |               17 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group2/AddrICache[7][31]_i_1__0_n_0     |                                                     |                9 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group2/AddrICache[4][31]_i_1__0_n_0     |                                                     |               13 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group2/AddrICache[3][31]_i_1__0_n_0     |                                                     |               13 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group2/AddrICache[2][31]_i_1__0_n_0     |                                                     |               13 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group0/AddrICache[1][31]_i_1__2_n_0     |                                                     |               13 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group2/AddrICache[0][31]_i_1__0_n_0     |                                                     |               11 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group1/AddrICache[6][31]_i_1__1_n_0     |                                                     |               17 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group1/AddrICache[5][31]_i_1__1_n_0     |                                                     |               14 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group1/AddrICache[7][31]_i_1__1_n_0     |                                                     |               16 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group1/AddrICache[4][31]_i_1__1_n_0     |                                                     |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group1/AddrICache[3][31]_i_1__1_n_0     |                                                     |               21 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group1/AddrICache[1][31]_i_1__1_n_0     |                                                     |               12 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group3/AddrICache[3][31]_i_1_n_0        |                                                     |               10 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group3/AddrICache[4][31]_i_1_n_0        |                                                     |               12 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group3/AddrICache[7][31]_i_1_n_0        |                                                     |               10 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group3/AddrICache[5][31]_i_1_n_0        |                                                     |               12 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group3/AddrICache[6][31]_i_1_n_0        |                                                     |               15 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group3/AddrICache[2][31]_i_1_n_0        |                                                     |               10 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group1/AddrICache[0][31]_i_1__1_n_0     |                                                     |               16 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group0/AddrICache[0][31]_i_1__2_n_0     |                                                     |               16 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group0/AddrICache[2][31]_i_1__2_n_0     |                                                     |               22 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group0/AddrICache[3][31]_i_1__2_n_0     |                                                     |               13 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group0/DataICache                       |                                                     |               13 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group0/AddrICache[6][31]_i_1__2_n_0     |                                                     |               14 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group0/AddrICache[5][31]_i_1__2_n_0     |                                                     |               14 |             64 |
+|  clk_pll/inst/cpu_clk   | cpu/IcacheI/Group0/AddrICache[4][31]_i_1__2_n_0     |                                                     |               16 |             64 |
+|  clk_pll/inst/timer_clk |                                                     |                                                     |               19 |             67 |
+|  clk_pll/inst/cpu_clk   |                                                     | cpu/RFI/CsrI/resetn                                 |               27 |             79 |
+|  clk_pll/inst/cpu_clk   |                                                     |                                                     |               53 |            121 |
+|  clk_pll/inst/cpu_clk   | cpu/LanuchI/IFIDI/to_id_obus[165]_i_1_n_0           | cpu/RFI/CsrI/resetn                                 |               41 |            136 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/line2_now_valid_o_reg_1[0]       | cpu/RFI/CsrI/resetn                                 |              163 |            399 |
+|  clk_pll/inst/cpu_clk   | cpu/MemStageI/EXMEMI/line1_now_valid_o_reg_1        | cpu/RFI/CsrI/resetn                                 |              145 |            415 |
+|  clk_pll/inst/cpu_clk   | cpu/ExStageI/IDEXI/to_ex_obus0_n_0                  | cpu/RFI/CsrI/resetn                                 |              244 |            492 |
++-------------------------+-----------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+
+

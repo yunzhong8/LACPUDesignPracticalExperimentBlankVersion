@@ -1,0 +1,1330 @@
+
+*** Running vivado
+    with args -log soc_lite_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source soc_lite_top.tcl -notrace
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source soc_lite_top.tcl -notrace
+Command: link_design -top soc_lite_top -part xc7a35tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/rtl/xilinx_ip/clk_pll/clk_pll.dcp' for cell 'clk_pll'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/rtl/xilinx_ip/data_ram/data_ram.dcp' for cell 'data_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/rtl/xilinx_ip/inst_ram/inst_ram.dcp' for cell 'inst_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/run_vivado/project/loongson.srcs/sources_1/ip/video_ram/video_ram.dcp' for cell 'vga_colorbat_item/vga_diplay_item/video_ram_item'
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1691.344 ; gain = 0.000 ; free physical = 4107 ; free virtual = 9826
+INFO: [Netlist 29-17] Analyzing 947 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'clk_pll/inst'
+Finished Parsing XDC File [/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'clk_pll/inst'
+Parsing XDC File [/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'clk_pll/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/rtl/xilinx_ip/clk_pll/clk_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/rtl/xilinx_ip/clk_pll/clk_pll.xdc:57]
+get_clocks: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2390.785 ; gain = 546.820 ; free physical = 3570 ; free virtual = 9326
+Finished Parsing XDC File [/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'clk_pll/inst'
+Parsing XDC File [/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/run_vivado/constraints/soc_lite_top.xdc]
+Finished Parsing XDC File [/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/run_vivado/constraints/soc_lite_top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2390.785 ; gain = 0.000 ; free physical = 3586 ; free virtual = 9342
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+13 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2390.785 ; gain = 944.957 ; free physical = 3586 ; free virtual = 9342
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2454.816 ; gain = 64.031 ; free physical = 3593 ; free virtual = 9329
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1a7656b54
+
+Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2454.816 ; gain = 0.000 ; free physical = 3581 ; free virtual = 9317
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1bae61097
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.55 . Memory (MB): peak = 2577.707 ; gain = 0.000 ; free physical = 3442 ; free virtual = 9177
+INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 4 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1f5344d0e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.70 . Memory (MB): peak = 2577.707 ; gain = 0.000 ; free physical = 3442 ; free virtual = 9177
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1b0566543
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.90 . Memory (MB): peak = 2577.707 ; gain = 0.000 ; free physical = 3441 ; free virtual = 9176
+INFO: [Opt 31-389] Phase Sweep created 16 cells and removed 8 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 1b0566543
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2577.707 ; gain = 0.000 ; free physical = 3441 ; free virtual = 9176
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1b0566543
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2577.707 ; gain = 0.000 ; free physical = 3441 ; free virtual = 9176
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1508bc1b5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2577.707 ; gain = 0.000 ; free physical = 3441 ; free virtual = 9176
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               1  |               4  |                                              1  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |              16  |               8  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2577.707 ; gain = 0.000 ; free physical = 3441 ; free virtual = 9176
+Ending Logic Optimization Task | Checksum: fdc99c00
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2577.707 ; gain = 0.000 ; free physical = 3441 ; free virtual = 9176
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.187 | TNS=-34.458 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 5 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 2 Total Ports: 10
+Ending PowerOpt Patch Enables Task | Checksum: 1a9324a15
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3388 ; free virtual = 9127
+Ending Power Optimization Task | Checksum: 1a9324a15
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:36 . Memory (MB): peak = 2946.352 ; gain = 368.645 ; free physical = 3400 ; free virtual = 9140
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1a9324a15
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3400 ; free virtual = 9140
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3400 ; free virtual = 9140
+Ending Netlist Obfuscation Task | Checksum: 1612d996f
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3400 ; free virtual = 9140
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:40 . Memory (MB): peak = 2946.352 ; gain = 555.566 ; free physical = 3400 ; free virtual = 9140
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3392 ; free virtual = 9132
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3391 ; free virtual = 9132
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/run_vivado/project/loongson.runs/impl_2/soc_lite_top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file soc_lite_top_drc_opted.rpt -pb soc_lite_top_drc_opted.pb -rpx soc_lite_top_drc_opted.rpx
+Command: report_drc -file soc_lite_top_drc_opted.rpt -pb soc_lite_top_drc_opted.pb -rpx soc_lite_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/run_vivado/project/loongson.runs/impl_2/soc_lite_top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3352 ; free virtual = 9103
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 13a8abbc0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3352 ; free virtual = 9103
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3352 ; free virtual = 9103
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 5fbf004e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.62 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3362 ; free virtual = 9111
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: de922d74
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3346 ; free virtual = 9096
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: de922d74
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3346 ; free virtual = 9096
+Phase 1 Placer Initialization | Checksum: de922d74
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3346 ; free virtual = 9096
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: e78bcef2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3321 ; free virtual = 9072
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 123 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 898 nets or cells. Created 858 new cells, deleted 40 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net cpu/ExStageI/IDEXI/to_ex_obus_reg[136]_1 could not be optimized because driver cpu/ExStageI/IDEXI/video_ram_item_i_1 could not be replicated
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-666] Processed cell vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. No change.
+INFO: [Physopt 32-666] Processed cell vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. No change.
+INFO: [Physopt 32-666] Processed cell vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. No change.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3290 ; free virtual = 9042
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3290 ; free virtual = 9042
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          858  |             40  |                   898  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          858  |             40  |                   898  |           0  |           8  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 19fb4e909
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:16 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3288 ; free virtual = 9040
+Phase 2.2 Global Placement Core | Checksum: 216c40edc
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:17 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3286 ; free virtual = 9039
+Phase 2 Global Placement | Checksum: 216c40edc
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:17 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3293 ; free virtual = 9046
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1dc7fc22f
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:17 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3291 ; free virtual = 9044
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2065cb2dc
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:19 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3293 ; free virtual = 9046
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1cd82ff71
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:19 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3293 ; free virtual = 9046
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 21d4a6d0e
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:19 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3293 ; free virtual = 9046
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 209de5fcc
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:23 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3298 ; free virtual = 9051
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 21f2a24a4
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:29 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3277 ; free virtual = 9030
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1d1dfc5b2
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:30 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3276 ; free virtual = 9030
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 283de2867
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:30 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3276 ; free virtual = 9030
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1d60dfc38
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:34 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3278 ; free virtual = 9032
+Phase 3 Detail Placement | Checksum: 1d60dfc38
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:34 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3278 ; free virtual = 9032
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1ddb127e0
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net cpu/RFI/CsrI/resetn, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1ddb127e0
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:36 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3291 ; free virtual = 9045
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.640. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1992e9578
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:53 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3284 ; free virtual = 9038
+Phase 4.1 Post Commit Optimization | Checksum: 1992e9578
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:53 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3284 ; free virtual = 9038
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1992e9578
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:53 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3284 ; free virtual = 9038
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1992e9578
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:53 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3285 ; free virtual = 9039
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3285 ; free virtual = 9039
+Phase 4.4 Final Placement Cleanup | Checksum: 10d642415
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:53 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3285 ; free virtual = 9039
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 10d642415
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:53 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3285 ; free virtual = 9039
+Ending Placer Task | Checksum: deb26392
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:53 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3285 ; free virtual = 9039
+INFO: [Common 17-83] Releasing license: Implementation
+80 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:02 ; elapsed = 00:00:55 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3304 ; free virtual = 9058
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3304 ; free virtual = 9058
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.67 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3271 ; free virtual = 9047
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/run_vivado/project/loongson.runs/impl_2/soc_lite_top_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file soc_lite_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3293 ; free virtual = 9052
+INFO: [runtcl-4] Executing : report_utilization -file soc_lite_top_utilization_placed.rpt -pb soc_lite_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file soc_lite_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3303 ; free virtual = 9063
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3268 ; free virtual = 9028
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.640 | TNS=-13.952 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1320d9a33
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:01 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3255 ; free virtual = 9016
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.640 | TNS=-13.952 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 1320d9a33
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:01 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3255 ; free virtual = 9016
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.640 | TNS=-13.952 |
+INFO: [Physopt 32-702] Processed net inst_ram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[277]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[277]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.640 | TNS=-13.952 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[241]. Replicated 4 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[241]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.633 | TNS=-13.680 |
+INFO: [Physopt 32-702] Processed net cpu/IfStageI/Preif_IFI/Q[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/idex_to_ex_bus[144]. Replicated 6 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/idex_to_ex_bus[144]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.631 | TNS=-13.610 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[51]. Replicated 7 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[51]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.620 | TNS=-13.290 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[242]. Replicated 4 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[242]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.615 | TNS=-13.114 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/to_ex_obus_reg[145]_rep_0. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/to_ex_obus_reg[145]_rep_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.609 | TNS=-12.506 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[248]. Replicated 5 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[248]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.593 | TNS=-12.250 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[272]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[272]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.585 | TNS=-12.122 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[259]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[259]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.583 | TNS=-12.090 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[53]. Replicated 5 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[53]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.583 | TNS=-12.071 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[286]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[286]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.582 | TNS=-12.023 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[45]. Replicated 5 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[45]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.580 | TNS=-11.852 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/idex_to_ex_bus[490]. Replicated 4 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/idex_to_ex_bus[490]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.573 | TNS=-11.708 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[69]. Replicated 4 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[69]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.573 | TNS=-11.708 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[57]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[57]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.571 | TNS=-11.474 |
+INFO: [Physopt 32-663] Processed net cpu/WbStageI/MEMWBI/to_wb_obus_reg_n_0_[414].  Re-placed instance cpu/WbStageI/MEMWBI/to_wb_obus_reg[414]
+INFO: [Physopt 32-735] Processed net cpu/WbStageI/MEMWBI/to_wb_obus_reg_n_0_[414]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.570 | TNS=-11.458 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[244]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[244]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.564 | TNS=-11.362 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[305].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[555]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[305]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.560 | TNS=-11.234 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[61]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[61]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.556 | TNS=-11.107 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[273]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[273]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.553 | TNS=-10.963 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[63]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[63]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.547 | TNS=-10.776 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[278]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[278]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.542 | TNS=-10.696 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[294].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[544]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[294]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.542 | TNS=-10.645 |
+INFO: [Physopt 32-663] Processed net cpu/WbStageI/MEMWBI/to_wb_obus_reg_n_0_[415].  Re-placed instance cpu/WbStageI/MEMWBI/to_wb_obus_reg[415]
+INFO: [Physopt 32-735] Processed net cpu/WbStageI/MEMWBI/to_wb_obus_reg_n_0_[415]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.539 | TNS=-10.581 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[42]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[42]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.539 | TNS=-10.581 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[49]. Replicated 6 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[49]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.538 | TNS=-10.564 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[75]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[75]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.538 | TNS=-10.530 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[276]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[276]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.536 | TNS=-10.418 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[77]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[77]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.534 | TNS=-10.384 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[71]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[71]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.531 | TNS=-10.248 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[242]_repN. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[242]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.529 | TNS=-10.120 |
+INFO: [Physopt 32-702] Processed net inst_ram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net cpu/LanuchI/IFIDI/Q[62].  Re-placed instance cpu/LanuchI/IFIDI/to_id_obus_reg[102]
+INFO: [Physopt 32-735] Processed net cpu/LanuchI/IFIDI/Q[62]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.526 | TNS=-10.048 |
+INFO: [Physopt 32-702] Processed net cpu/IfStageI/Preif_IFI/Q[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/idex_to_ex_bus[208].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[208]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/idex_to_ex_bus[208]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.523 | TNS=-9.895 |
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[242]_repN_4.  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[492]_replica_4
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/Q[242]_repN_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/pc1_o_reg[10].  Did not re-place instance cpu/LanuchI/IFIDI/pc2_o_carry__1_i_7
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/pc1_o_reg[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/PreIFI/data5[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/IfStageI/Preif_IFI/data2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/line2_now_valid_o_reg_6.  Did not re-place instance cpu/LanuchI/IFIDI/to_id_obus[165]_i_4
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/line2_now_valid_o_reg_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/D[0].  Did not re-place instance cpu/LanuchI/IFIDI/to_id_obus[162]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/D[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[81]_0.  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus0_i_7
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[81]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_17_n_0.  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus0_i_17
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_27_n_0.  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus0_i_27
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/IDI1/data0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[148].  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus[304]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[148]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[91].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[398]_i_1
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/D[91]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI2/alu_rl_o[24].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[469]_i_2
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/EXI2/alu_rl_o[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/to_mem_obus[469]_i_3_n_0.  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[469]_i_3
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/to_mem_obus[469]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/to_mem_obus[469]_i_6_n_0.  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[469]_i_6
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/to_mem_obus[469]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ExStageI/EXI2/ALU/mul_result[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/EXI2/ALU/to_ex_obus_reg[519]_0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.517 | TNS=-9.655 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[106].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[209]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[106]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.510 | TNS=-9.536 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[62].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[163]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[62]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.508 | TNS=-9.264 |
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270_0[13].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[460]_i_14
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/i___270_0[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.494 | TNS=-9.008 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[104].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[206]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[104]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.493 | TNS=-8.923 |
+INFO: [Physopt 32-663] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg_n_0_[112].  Re-placed instance cpu/LanuchI/IFIDI/to_id_obus_reg[112]
+INFO: [Physopt 32-735] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg_n_0_[112]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.492 | TNS=-8.805 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[296].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[546]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[296]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.489 | TNS=-8.709 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/to_ex_obus_reg[142]_rep_0.  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[142]_rep
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/to_ex_obus_reg[142]_rep_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.486 | TNS=-8.590 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[290].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[540]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[290]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.482 | TNS=-8.366 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[103].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[205]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[103]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.469 | TNS=-8.073 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[50].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[151]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[50]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.467 | TNS=-8.013 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[252].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[502]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[252]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.465 | TNS=-7.853 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[44].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[143]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[44]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.460 | TNS=-7.778 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[285].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[535]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[285]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.457 | TNS=-7.437 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[250].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[500]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[250]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.457 | TNS=-7.437 |
+INFO: [Physopt 32-663] Processed net cpu/WbStageI/MEMWBI/to_wb_obus_reg_n_0_[416].  Re-placed instance cpu/WbStageI/MEMWBI/to_wb_obus_reg[416]
+INFO: [Physopt 32-735] Processed net cpu/WbStageI/MEMWBI/to_wb_obus_reg_n_0_[416]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.455 | TNS=-7.405 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[260].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[510]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[260]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.455 | TNS=-7.405 |
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_53_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[133].  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus[289]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[133]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[76].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[383]_i_1
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/D[76]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.453 | TNS=-7.373 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[293].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[543]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[293]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.450 | TNS=-7.325 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[289].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[539]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[289]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.438 | TNS=-7.133 |
+INFO: [Physopt 32-663] Processed net cpu/WbStageI/MEMWBI/to_wb_obus_reg_n_0_[413].  Re-placed instance cpu/WbStageI/MEMWBI/to_wb_obus_reg[413]
+INFO: [Physopt 32-735] Processed net cpu/WbStageI/MEMWBI/to_wb_obus_reg_n_0_[413]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.437 | TNS=-7.118 |
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[136].  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus[292]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[136]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[79].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[386]_i_1
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/D[79]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.436 | TNS=-7.013 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[45].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[146]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[45]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.435 | TNS=-7.000 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[83].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[184]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[83]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.434 | TNS=-6.896 |
+INFO: [Physopt 32-663] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg_n_0_[110].  Re-placed instance cpu/LanuchI/IFIDI/to_id_obus_reg[110]
+INFO: [Physopt 32-735] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg_n_0_[110]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.430 | TNS=-6.648 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[258].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[508]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[258]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.430 | TNS=-6.648 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/i___270_0[6].  Re-placed instance cpu/ExStageI/IDEXI/to_mem_obus[452]_i_12
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/i___270_0[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.427 | TNS=-6.528 |
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[50].  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[151]
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/Q[50]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/RFI/CsrI/eentry_reg_reg[12]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/IDI1/data1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_33_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.424 | TNS=-6.489 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[76].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[177]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[76]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.423 | TNS=-6.476 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[47].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[148]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[47]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.422 | TNS=-6.450 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.422 | TNS=-6.450 |
+Phase 3 Critical Path Optimization | Checksum: 1320d9a33
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:00:49 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3251 ; free virtual = 9012
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.422 | TNS=-6.450 |
+INFO: [Physopt 32-702] Processed net inst_ram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[242]_repN_4. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[242]_repN_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.421 | TNS=-6.375 |
+INFO: [Physopt 32-702] Processed net cpu/IfStageI/Preif_IFI/Q[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[94].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[195]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[94]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.419 | TNS=-6.349 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[59]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[59]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.417 | TNS=-6.310 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[246]. Replicated 4 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[246]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.416 | TNS=-6.235 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[70]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[70]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.412 | TNS=-6.040 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[288]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[288]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.410 | TNS=-6.010 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[260]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[260]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.409 | TNS=-5.995 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[301].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[551]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[301]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.408 | TNS=-5.980 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[258]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[258]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.401 | TNS=-5.845 |
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[45]_repN_1.  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[146]_replica_1
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[45]_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.399 | TNS=-5.754 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[254]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[254]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.394 | TNS=-5.664 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[50]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[50]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.393 | TNS=-5.651 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[67]. Replicated 4 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[67]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.393 | TNS=-5.586 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/to_ex_obus_reg[488]_rep_0. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/to_ex_obus_reg[488]_rep_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.391 | TNS=-5.556 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[268]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[268]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.388 | TNS=-5.451 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[52]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[52]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.384 | TNS=-5.308 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[240]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[240]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.381 | TNS=-5.263 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[262]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[262]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.377 | TNS=-5.188 |
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[45]_repN_1.  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[146]_replica_1
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[45]_repN_1. Replicated 4 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[45]_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.376 | TNS=-5.097 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/idex_to_ex_bus[490]_repN. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/idex_to_ex_bus[490]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.372 | TNS=-5.038 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[247]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[247]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.370 | TNS=-4.996 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[55]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[55]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.369 | TNS=-4.905 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[284]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[284]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.363 | TNS=-4.765 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[60]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[60]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.359 | TNS=-4.597 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[287]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[287]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.358 | TNS=-4.582 |
+INFO: [Physopt 32-663] Processed net cpu/WbStageI/MEMWBI/to_wb_obus_reg_n_0_[409].  Re-placed instance cpu/WbStageI/MEMWBI/to_wb_obus_reg[409]
+INFO: [Physopt 32-735] Processed net cpu/WbStageI/MEMWBI/to_wb_obus_reg_n_0_[409]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.357 | TNS=-4.569 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[283]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[283]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.355 | TNS=-4.541 |
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[304].  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[554]
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[304]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[304]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.352 | TNS=-4.499 |
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[304].  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[554]
+INFO: [Physopt 32-571] Net cpu/ExStageI/IDEXI/Q[304] was not replicated.
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/Q[304]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/pc1_o_reg[10].  Did not re-place instance cpu/LanuchI/IFIDI/pc2_o_carry__1_i_7
+INFO: [Physopt 32-710] Processed net cpu/RFI/CsrI/eentry_reg_reg[31]_1[9]. Critical path length was reduced through logic transformation on cell cpu/RFI/CsrI/pc1_o[10]_i_1_comp.
+INFO: [Physopt 32-735] Processed net cpu/LanuchI/IFIDI/pc1_o_reg[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.350 | TNS=-4.048 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[85]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[85]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.350 | TNS=-4.048 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/to_ex_obus_reg[145]_rep_0_repN_1. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/to_ex_obus_reg[145]_rep_0_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.350 | TNS=-4.048 |
+INFO: [Physopt 32-81] Processed net cpu/ExStageI/IDEXI/Q[62]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[62]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.349 | TNS=-4.037 |
+INFO: [Common 17-14] Message 'Physopt 32-619' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-702] Processed net cpu/IfStageI/Preif_IFI/Q[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[54].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[155]
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/Q[54]. Optimization improves timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[44].  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[143]
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/Q[44]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/RFI/CsrI/eentry_reg_reg[12]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/pc1_o_reg[10].  Did not re-place instance cpu/LanuchI/IFIDI/pc2_o_carry__1_i_7
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/pc1_o_reg[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/PreIFI/data5[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/IfStageI/Preif_IFI/data2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/line2_now_valid_o_reg_6.  Did not re-place instance cpu/LanuchI/IFIDI/to_id_obus[165]_i_4
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/line2_now_valid_o_reg_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/D[0].  Did not re-place instance cpu/LanuchI/IFIDI/to_id_obus[162]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/D[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[81]_0.  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus0_i_7
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[81]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_17_n_0.  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus0_i_17
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_27_n_0.  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus0_i_27
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/IDI1/data0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[185].  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus[341]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[185]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[29].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[93]_i_1
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/D[29]. Optimization improves timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/idex_to_ex_bus[208].  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[208]
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/idex_to_ex_bus[208]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/IDI1/data1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_32_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[29].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[93]_i_1
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/D[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/rh__163[29].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[93]_i_2
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/rh__163[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/mul_result[61]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270[36].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[71]_i_7
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/i___270[36]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/u_c20/sum0[37].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[71]_i_18
+INFO: [Physopt 32-735] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/u_c20/sum0[37]. Optimization improves timing on the net.
+INFO: [Physopt 32-702] Processed net inst_ram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/douta[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg_n_0_[113].  Re-placed instance cpu/LanuchI/IFIDI/to_id_obus_reg[113]
+INFO: [Physopt 32-735] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg_n_0_[113]. Optimization improves timing on the net.
+INFO: [Common 17-14] Message 'Physopt 32-735' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[71]_repN_1.  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[172]_replica_1
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[56].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[157]
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[82].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[183]
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[68].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[169]
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[66].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[167]
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[151].  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus[307]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[151]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[27].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[91]_i_1
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[304].  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[554]
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/Q[304]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[179].  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus[335]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[179]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[90].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[397]_i_1
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/D[90]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI2/ALU/rh__163[23].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[397]_i_2
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/EXI2/ALU/rh__163[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ExStageI/EXI2/ALU/mul_result[55]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270_0[36].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[381]_i_7
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/i___270_0[36]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI2/ALU/wallace_mul_item/u_c20/p_0_in[37].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[381]_i_17
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[248]_repN.  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[498]_replica
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[65].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[166]
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[71]_repN_1.  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[172]_replica_1
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/Q[71]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270[44].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[79]_i_7
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/i___270[44]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/u_c20/p_0_in[45].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[79]_i_17
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[74].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[175]
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[274].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[524]
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[282].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[532]
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[155].  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus[311]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[155]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[31].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[95]_i_1
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/D[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/EXI1/alu_rl_o[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/to_mem_obus[166]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/to_mem_obus[166]_i_6_n_0.  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[166]_i_6
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/to_mem_obus[166]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ExStageI/EXI1/ALU/mul_result[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270[23].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[162]_i_25
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/i___270[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/u_c20/sum0[24].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[162]_i_40
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[260].  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[510]
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/Q[260]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[96].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[403]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[148].  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus[304]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[148]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[24].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[88]_i_1
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/D[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI1/alu_rl_o[24].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[159]_i_2
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/EXI1/alu_rl_o[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/to_mem_obus[159]_i_3_n_0.  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[159]_i_3
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/to_mem_obus[159]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/to_mem_obus[159]_i_6_n_0.  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[159]_i_6
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/to_mem_obus[159]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ExStageI/EXI1/ALU/mul_result[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270[9].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[146]_i_13
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/to_ex_obus_reg[145]_rep_0_repN_3.  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[145]_rep_replica_3
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[86].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[187]
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[58].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[159]
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_ex_obus0_i_33_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[184].  Did not re-place instance cpu/LanuchI/IFIDI/to_ex_obus[340]_i_1
+INFO: [Physopt 32-702] Processed net cpu/LanuchI/IFIDI/to_id_obus_reg[94]_0[184]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[95].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[402]_i_1
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/D[95]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI2/alu_rl_o[28].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[473]_i_2
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/EXI2/alu_rl_o[28]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/to_mem_obus[473]_i_3_n_0.  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[473]_i_3
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/to_mem_obus[473]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/to_mem_obus[473]_i_6_n_0.  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[473]_i_6
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/to_mem_obus[473]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ExStageI/EXI2/ALU/mul_result[28]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[60]_repN.  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[161]_replica
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/Q[60]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270[48].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[83]_i_7
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/i___270[48]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/u_c20/sum0[49].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[83]_i_18
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270[39].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[75]_i_8
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/i___270[39]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/u_c20/sum0[40].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[75]_i_20
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[50]_repN.  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[151]_replica
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/Q[50]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[275].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[525]
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[87].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[188]
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[51]_repN_1.  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[152]_replica_1
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/Q[248]_repN.  Did not re-place instance cpu/ExStageI/IDEXI/to_ex_obus_reg[498]_replica
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/Q[248]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/D[91].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[398]_i_1
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/D[91]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI2/alu_rl_o[24].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[469]_i_2
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/EXI2/alu_rl_o[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/to_mem_obus[469]_i_3_n_0.  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[469]_i_3
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/to_mem_obus[469]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/to_mem_obus[469]_i_6_n_0.  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[469]_i_6
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/to_mem_obus[469]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ExStageI/EXI2/ALU/mul_result[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270_0[14].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[460]_i_13
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270[14].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[150]_i_13
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/i___270[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/u_c20/p_0_in[15].  Re-placed instance cpu/ExStageI/IDEXI/to_mem_obus[150]_i_25
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270[8].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[146]_i_14
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/i___270[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/EXI1/ALU/to_ex_obus_reg[153][1].  Did not re-place instance cpu/ExStageI/EXI1/ALU/i___251
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/EXI1/ALU/to_ex_obus_reg[153][1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i__i_14__23_0[0].  Did not re-place instance cpu/ExStageI/IDEXI/i__i_1__175
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/i__i_14__23_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/to_ex_obus_reg[150]_0[3].  Did not re-place instance cpu/ExStageI/IDEXI/i__i_1__176
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/to_ex_obus_reg[150]_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/c00[7].  Did not re-place instance cpu/ExStageI/IDEXI/i__i_2__39
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/c00[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/u_c00/sum0[7].  Did not re-place instance cpu/ExStageI/IDEXI/i__i_3__68
+INFO: [Physopt 32-663] Processed net cpu/ExStageI/IDEXI/Q[253].  Re-placed instance cpu/ExStageI/IDEXI/to_ex_obus_reg[503]
+INFO: [Physopt 32-663] Processed net cpu/WbStageI/MEMWBI/to_wb_obus_reg_n_0_[417].  Re-placed instance cpu/WbStageI/MEMWBI/to_wb_obus_reg[417]
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/i___270[32].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[67]_i_8
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/i___270[32]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/u_c20/sum0[33].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[67]_i_29
+INFO: [Physopt 32-702] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/u_c20/sum0[33]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net cpu/ExStageI/IDEXI/EXI1/ALU/wallace_mul_item/u_c10/sum0[33].  Did not re-place instance cpu/ExStageI/IDEXI/to_mem_obus[71]_i_37
+Phase 4 Critical Path Optimization | Checksum: 1320d9a33
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:01:31 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3243 ; free virtual = 9004
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3243 ; free virtual = 9004
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-0.216 | TNS=-1.625 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.424  |         12.327  |          154  |              0  |                   132  |           0  |           2  |  00:01:30  |
+|  Total          |          0.424  |         12.327  |          154  |              0  |                   132  |           0  |           3  |  00:01:30  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3243 ; free virtual = 9004
+Ending Physical Synthesis Task | Checksum: 1320d9a33
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:01:31 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3243 ; free virtual = 9004
+INFO: [Common 17-83] Releasing license: Implementation
+595 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:03:40 ; elapsed = 00:01:33 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3251 ; free virtual = 9012
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3251 ; free virtual = 9012
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.69 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3224 ; free virtual = 9008
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/run_vivado/project/loongson.runs/impl_2/soc_lite_top_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: d53219b ConstDB: 0 ShapeSum: 519c511c RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 509169df
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3141 ; free virtual = 8909
+Post Restoration Checksum: NetGraph: 496293f8 NumContArr: 72ed5e7 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 509169df
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3146 ; free virtual = 8913
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 509169df
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3112 ; free virtual = 8880
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 509169df
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3112 ; free virtual = 8880
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 166f96cf3
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3090 ; free virtual = 8858
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.155  | TNS=0.000  | WHS=-0.412 | THS=-31.750|
+
+Phase 2 Router Initialization | Checksum: 1e6e6fde2
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3087 ; free virtual = 8855
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000876983 %
+  Global Horizontal Routing Utilization  = 0.00130141 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 19266
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 19265
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: b9c4cde3
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:15 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3067 ; free virtual = 8835
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 13278
+ Number of Nodes with overlaps = 5388
+ Number of Nodes with overlaps = 3071
+ Number of Nodes with overlaps = 1759
+ Number of Nodes with overlaps = 871
+ Number of Nodes with overlaps = 419
+ Number of Nodes with overlaps = 126
+ Number of Nodes with overlaps = 73
+ Number of Nodes with overlaps = 70
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.089 | TNS=-142.027| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1606f2ccb
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:01:17 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3067 ; free virtual = 8836
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 5274
+ Number of Nodes with overlaps = 2405
+ Number of Nodes with overlaps = 1495
+ Number of Nodes with overlaps = 440
+ Number of Nodes with overlaps = 257
+ Number of Nodes with overlaps = 133
+ Number of Nodes with overlaps = 64
+ Number of Nodes with overlaps = 40
+ Number of Nodes with overlaps = 23
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.993 | TNS=-152.095| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 11f1a6aa5
+
+Time (s): cpu = 00:05:25 ; elapsed = 00:01:47 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3077 ; free virtual = 8846
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 3333
+ Number of Nodes with overlaps = 1533
+Phase 4.3 Global Iteration 2 | Checksum: 1c8ca719c
+
+Time (s): cpu = 00:05:51 ; elapsed = 00:01:55 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3059 ; free virtual = 8828
+Phase 4 Rip-up And Reroute | Checksum: 1c8ca719c
+
+Time (s): cpu = 00:05:51 ; elapsed = 00:01:55 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3059 ; free virtual = 8828
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1d222362c
+
+Time (s): cpu = 00:05:53 ; elapsed = 00:01:55 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3063 ; free virtual = 8832
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.985 | TNS=-141.632| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 19eb819a2
+
+Time (s): cpu = 00:05:53 ; elapsed = 00:01:56 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3063 ; free virtual = 8832
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 19eb819a2
+
+Time (s): cpu = 00:05:53 ; elapsed = 00:01:56 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3063 ; free virtual = 8832
+Phase 5 Delay and Skew Optimization | Checksum: 19eb819a2
+
+Time (s): cpu = 00:05:53 ; elapsed = 00:01:56 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3063 ; free virtual = 8832
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: f7fa75e2
+
+Time (s): cpu = 00:05:55 ; elapsed = 00:01:56 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3063 ; free virtual = 8832
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.902 | TNS=-119.956| WHS=0.021  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: f9f9b0fc
+
+Time (s): cpu = 00:05:55 ; elapsed = 00:01:56 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3063 ; free virtual = 8832
+Phase 6 Post Hold Fix | Checksum: f9f9b0fc
+
+Time (s): cpu = 00:05:55 ; elapsed = 00:01:56 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3063 ; free virtual = 8832
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 16.1327 %
+  Global Horizontal Routing Utilization  = 18.11 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 96.3964%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X14Y133 -> INT_L_X14Y133
+   INT_R_X13Y129 -> INT_R_X13Y129
+   INT_L_X14Y129 -> INT_L_X14Y129
+   INT_L_X16Y127 -> INT_L_X16Y127
+   INT_R_X25Y93 -> INT_R_X25Y93
+South Dir 1x1 Area, Max Cong = 97.2973%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X17Y111 -> INT_R_X17Y111
+   INT_R_X17Y110 -> INT_R_X17Y110
+   INT_L_X22Y106 -> INT_L_X22Y106
+   INT_L_X36Y101 -> INT_L_X36Y101
+   INT_L_X36Y99 -> INT_L_X36Y99
+East Dir 1x1 Area, Max Cong = 92.6471%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X12Y115 -> INT_L_X12Y115
+   INT_L_X16Y107 -> INT_L_X16Y107
+   INT_R_X17Y105 -> INT_R_X17Y105
+   INT_R_X15Y103 -> INT_R_X15Y103
+   INT_R_X19Y103 -> INT_R_X19Y103
+West Dir 1x1 Area, Max Cong = 94.1176%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X26Y109 -> INT_L_X26Y109
+   INT_R_X25Y108 -> INT_R_X25Y108
+   INT_R_X23Y107 -> INT_R_X23Y107
+   INT_R_X33Y104 -> INT_R_X33Y104
+   INT_R_X37Y99 -> INT_R_X37Y99
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.5 Sparse Ratio: 0.5
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.333333 Sparse Ratio: 0.75
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 2 Aspect Ratio: 0.75 Sparse Ratio: 0.5
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 2 Aspect Ratio: 0.75 Sparse Ratio: 0.5625
+
+Phase 7 Route finalize | Checksum: 12175799c
+
+Time (s): cpu = 00:05:55 ; elapsed = 00:01:56 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3063 ; free virtual = 8832
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 12175799c
+
+Time (s): cpu = 00:05:55 ; elapsed = 00:01:57 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3063 ; free virtual = 8832
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: f852fe9b
+
+Time (s): cpu = 00:05:56 ; elapsed = 00:01:58 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3063 ; free virtual = 8832
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.902 | TNS=-119.956| WHS=0.021  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: f852fe9b
+
+Time (s): cpu = 00:05:57 ; elapsed = 00:01:58 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3063 ; free virtual = 8832
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:05:57 ; elapsed = 00:01:58 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3102 ; free virtual = 8871
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+613 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:05:59 ; elapsed = 00:01:59 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3102 ; free virtual = 8871
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3102 ; free virtual = 8871
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.79 . Memory (MB): peak = 2946.352 ; gain = 0.000 ; free physical = 3066 ; free virtual = 8864
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/run_vivado/project/loongson.runs/impl_2/soc_lite_top_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file soc_lite_top_drc_routed.rpt -pb soc_lite_top_drc_routed.pb -rpx soc_lite_top_drc_routed.rpx
+Command: report_drc -file soc_lite_top_drc_routed.rpt -pb soc_lite_top_drc_routed.pb -rpx soc_lite_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/run_vivado/project/loongson.runs/impl_2/soc_lite_top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file soc_lite_top_methodology_drc_routed.rpt -pb soc_lite_top_methodology_drc_routed.pb -rpx soc_lite_top_methodology_drc_routed.rpx
+Command: report_methodology -file soc_lite_top_methodology_drc_routed.rpt -pb soc_lite_top_methodology_drc_routed.pb -rpx soc_lite_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/ysyx/zzq/cdp_ede_local-Lab06_exp13/mycpu_env/soc_verify/soc_bram/run_vivado/project/loongson.runs/impl_2/soc_lite_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file soc_lite_top_power_routed.rpt -pb soc_lite_top_power_summary_routed.pb -rpx soc_lite_top_power_routed.rpx
+Command: report_power -file soc_lite_top_power_routed.rpt -pb soc_lite_top_power_summary_routed.pb -rpx soc_lite_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+625 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 3071.934 ; gain = 24.012 ; free physical = 3041 ; free virtual = 8825
+INFO: [runtcl-4] Executing : report_route_status -file soc_lite_top_route_status.rpt -pb soc_lite_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file soc_lite_top_timing_summary_routed.rpt -pb soc_lite_top_timing_summary_routed.pb -rpx soc_lite_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file soc_lite_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file soc_lite_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file soc_lite_top_bus_skew_routed.rpt -pb soc_lite_top_bus_skew_routed.pb -rpx soc_lite_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force soc_lite_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[13] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[9]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_x_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRBWRADDR[14] (net: vga_colorbat_item/vga_diplay_item/video_ram_item/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[10]) which is driven by a register (vga_colorbat_item/vga_driver_item/cnt_y_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 22 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./soc_lite_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+644 Infos, 44 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 3267.707 ; gain = 195.773 ; free physical = 3004 ; free virtual = 8797
+INFO: [Common 17-206] Exiting Vivado at Fri May  5 15:08:56 2023...
